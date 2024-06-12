@@ -13,11 +13,12 @@ public class Eventos {
         int botones = 12;
         Frame miVentana = new Frame("Ventana de eventos del raton");
         Label mensaje = new Label("Mensaje asociado al boton pulsado");
+        Label mensaje2 = new Label("Pulsa un boton");
         Panel panelPrincipal = new Panel(new GridLayout(botones + 1, 1));
         InterrupcionesDeRaton saberaton= new InterrupcionesDeRaton(mensaje);
         Button[] botons = new Button[botones];
         mensaje.setBackground(Color.CYAN);
-        panelPrincipal.add(mensaje);
+        panelPrincipal.add(mensaje2);
         for (int i = 0; i < botones; i++) {
             botons[i] = new Button("Boton No " + (i+1));
             botons[i].setBackground(Color.lightGray);
